@@ -17,7 +17,9 @@ import Wrp from '../Wrapper'
 
 import messages from './messages'
 
-const Wrapper = styled(Wrp)`padding-bottom: 0;`
+const Wrapper = styled(Wrp)`
+  padding-bottom: 0;
+`
 
 const Container = styled(Ctn)`
   padding: 2rem 1rem 7rem 1rem;
@@ -157,7 +159,7 @@ export default class Contact extends React.Component {
             value={this.state.message}
             error={{
               message: this.props.errors.message,
-              options: ['Is required', 'Should be less than 301 characters'],
+              options: ['Is required', 'Should be less than 301 characters'], // why does this have to remain 301 to work?
               values: [
                 formatMessage(messages.messageError1),
                 formatMessage(messages.messageError2)
