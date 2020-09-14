@@ -159,7 +159,7 @@ export default class Contact extends React.Component {
             value={this.state.message}
             error={{
               message: this.props.errors.message,
-              options: ['Is required', 'Should be less than 301 characters'], // why does this have to remain 301 to work?
+              options: ['Is required', 'Should be less than 1000 characters'], // why does this have to remain 301 to work?
               values: [
                 formatMessage(messages.messageError1),
                 formatMessage(messages.messageError2)
